@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+  <channel>
+    <title>Example Podcast</title>
+    <itunes:author>Example Author</itunes:author>
+    <link>http://podcasts.example.com</link> 
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:subtitle>iTunes Example Subtitle</itunes:subtitle>
+    <itunes:owner>
+    	<itunes:name>iTunes Example Owner</itunes:name>
+    	<itunes:email>itunes@example.com</itunes:email>
+    </itunes:owner>
+    <image>
+    	<url>http://www.example.com/example.jpg</url>
+    	<title>Example Podcast</title>
+    	<link>http://www.example.com</link>
+    </image>
+    <itunes:link rel="image" type="video/jpeg" href="http://www.example.com/example.jpg">Example Podcast</itunes:link>
+    <itunes:category text="Music" />
+    <itunes:summary>iTunes Example Summary</itunes:summary>
+    <description>Can't get enough of the radioshow Tiësto's Club Life? Then subscribe to this podcast and get a weekly update on the favourite tracks of Tiësto! For more info about Tiësto please visit www.tiesto.com or club.bnn.nl</description> 
+    <language>EN</language> 
+    <webmaster>webmaster@example.com</webmaster> 
+    <lastBuildDate>Mon, 28 May 2099 13:00:00 GMT</lastBuildDate>                 
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/example" />
+    <feedburner:info uri="example" />
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+    <item>
+      <pubDate>Mon, 28 May 2099 13:00:00 GMT</pubDate>
+      <title>Example Podcast 2</title>
+      <author>Example Author 2</author>
+      <itunes:author>Example Author 2</itunes:author>
+      <description>Podcast 2 Example Description</description>
+
+      <itunes:link rel="image" type="video/jpeg" href="http://podcasts.example.com/example2.jpg">Podcast 2 Example Image</itunes:link>
+      <enclosure url="http://podcasts.example.com/example2.m4a" length="0" type="audio/mpeg" />
+    <feedburner:origEnclosureLink>http://tracks.example.com/example2.m4a</feedburner:origEnclosureLink>
+    </item>
+    <item>
+      <pubDate>Mon, 23 March 1999 23:00:00 GMT</pubDate>
+      <title>Example Podcast 1</title>
+      <author>Example Author 1</author>
+      <itunes:author>Example Author 1</itunes:author>
+      <description>Podcast 1 Example Description</description>
+
+      <itunes:link rel="image" type="video/jpeg" href="http://podcasts.example.com/example1.jpg">Podcast 1 Example Image</itunes:link>
+      <enclosure url="http://podcasts.example.com/example1.m4a" length="0" type="audio/mpeg" />
+      <feedburner:origEnclosureLink>http://tracks.example.com/example1.m4a</feedburner:origEnclosureLink>
+    </item>
+  </channel>
+</rss>

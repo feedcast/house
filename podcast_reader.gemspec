@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 
-require File.expand_path('../lib/podcast_reader/version', __FILE__)
+require File.expand_path('../lib/podcast_reader', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "podcast_reader"
   gem.version       = PodcastReader::VERSION
-  gem.summary       = %q{TODO: Summary}
-  gem.description   = %q{TODO: Description}
+  gem.summary       = %q{A example gem for reading podcast rss feeds}
+  gem.description   = %q{A example gem for reading podcast rss feeds}
   gem.license       = "MIT"
   gem.authors       = ["Luke Pearce"]
-  gem.email         = "luke.pearce@kulesolutions.com"
+  gem.email         = "podcast_reader@kulesolutions.com"
   gem.homepage      = "https://github.com/kule/podcast_reader#readme"
 
   gem.files         = `git ls-files`.split($/)
