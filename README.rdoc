@@ -1,0 +1,28 @@
+= podcast_reader
+
+* {Homepage}[https://github.com/kule/podcast_reader#readme]
+* {Issues}[https://github.com/kule/podcast_reader/issues]
+* {Documentation}[http://rubydoc.info/gems/podcast_reader/frames]
+* {Email}[mailto:luke.pearce at kulesolutions.com]
+
+== Description
+
+TODO: Description
+
+== Features
+
+== Examples
+
+  require 'podcast_reader'
+
+== Requirements
+
+== Install
+
+  $ gem install podcast_reader
+
+== Copyright
+
+Copyright (c) 2012 Luke Pearce
+
+See LICENSE.txt for details.
