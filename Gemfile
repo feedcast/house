@@ -3,6 +3,7 @@ source :rubygems
 gemspec
 
 gem 'nokogiri'
+gem 'open_uri_redirections'
 
 group :development, :test do
   gem 'rake',                 '~> 0.9.2'

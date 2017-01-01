@@ -1,13 +1,14 @@
 require 'nokogiri'
 require 'open-uri'
+require 'open_uri_redirections'
 require_relative './podcast_reader/podcast_reader_item'
 
 class PodcastReader
   VERSION = "0.1.0"
-  
+
   def initialize(url)
     @url = url
-    @podcast = Nokogiri::XML(open(url))
+    @podcast = Nokogiri::XML(open(url, allow_redirections: :all))
     @items = []
     raise 'The supplied url is not a valid podcast rss' if @podcast.at_xpath('/rss').nil?
   end

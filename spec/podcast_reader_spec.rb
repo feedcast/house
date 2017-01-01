@@ -9,7 +9,13 @@ describe PodcastReader do
   it 'should accept a valid podcast url' do
     lambda { PodcastReader.new('http://podcasts.example.com/valid.xml') }.should_not raise_error
   end
-  
+
+  context 'when the feed link redirects' do
+    it 'should not raise an error' do
+      lambda { PodcastReader.new('http://podcasts.example.com/redirect.xml') }.should_not raise_error
+    end
+  end
+
   it 'should raise exception when given an invalid podcast url' do
     lambda { PodcastReader.new('http://podcasts.example.com/invalid.xml') }.should raise_error
   end
