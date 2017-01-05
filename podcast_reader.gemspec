@@ -13,10 +13,8 @@ Gem::Specification.new do |gem|
   gem.email         = "podcast_reader@kulesolutions.com"
   gem.homepage      = "https://github.com/kule/podcast_reader#readme"
 
-  gem.files         = `git ls-files`.split($/)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.require_paths = ['lib']
+  gem.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  gem.require_paths = ["lib"]
 
   gem.add_dependency "nokogiri"
   gem.add_dependency "open_uri_redirections"

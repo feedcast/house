@@ -1,11 +1,9 @@
 require 'nokogiri'
 require 'open-uri'
 require 'open_uri_redirections'
-require_relative './podcast_reader/podcast_reader_item'
+require 'podcast_reader/podcast_reader_item'
 
 class PodcastReader
-  VERSION = "0.1.0"
-
   def initialize(url)
     @url = url
     @podcast = Nokogiri::XML(open(url, allow_redirections: :all))
