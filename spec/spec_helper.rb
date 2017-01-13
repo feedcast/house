@@ -1,7 +1,7 @@
-require 'rspec'
-require 'podcast_reader'
-require 'sham_rack'
-require 'rack'
+require "rspec"
+require "sham_rack"
+require "rack"
+require "house"
 
 ShamRack.at("podcasts.example.com").sinatra do
   get "/redirect.xml" do
@@ -12,6 +12,6 @@ ShamRack.at("podcasts.example.com").sinatra do
   end
 
   get "/:file_name" do
-    File.read(File.join('spec', 'test_data', params[:file_name]))
+    File.read(File.join("spec", "test_data", params[:file_name]))
   end
 end
