@@ -75,6 +75,8 @@ module House
       else
         node.text
       end
+    rescue Nokogiri::XML::XPath::SyntaxError => e
+      nil
     end
   end
 end

@@ -86,6 +86,7 @@ RSpec.describe House::Podcast do
         podcast = House::Podcast.new("http://podcasts.example.com/valid_with_items_without_itunes.xml")
         item = podcast.items.first
         item.subtitle.should be_nil
+        item.summary.should be_nil
         item.keywords.should be_empty
         item.duration.should be_nil
       end

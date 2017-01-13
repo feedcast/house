@@ -70,6 +70,8 @@ module House
           node.attr(attribute).value
         end
       end
+    rescue Nokogiri::XML::XPath::SyntaxError => e
+      nil
     end
   end
 end

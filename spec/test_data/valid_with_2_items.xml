@@ -3,23 +3,23 @@
   <channel>
     <title>Example Podcast</title>
     <itunes:author>Example Author</itunes:author>
-    <link>http://podcasts.example.com</link> 
+    <link>http://podcasts.example.com</link>
     <itunes:explicit>no</itunes:explicit>
     <itunes:subtitle>iTunes Example Subtitle</itunes:subtitle>
     <itunes:owner>
-    	<itunes:name>iTunes Example Owner</itunes:name>
-    	<itunes:email>itunes@example.com</itunes:email>
+      <itunes:name>iTunes Example Owner</itunes:name>
+      <itunes:email>itunes@example.com</itunes:email>
     </itunes:owner>
     <image>
-    	<url>http://podcasts.example.com/example2.jpg</url>
-    	<title>Example Podcast</title>
-    	<link>http://www.example.com</link>
+      <url>http://podcasts.example.com/example2.jpg</url>
+      <title>Example Podcast</title>
+      <link>http://www.example.com</link>
     </image>
     <itunes:link rel="image" type="video/jpeg" href="http://www.example.com/example.jpg">Example Podcast</itunes:link>
     <itunes:category text="Music" />
     <itunes:summary>iTunes Example Summary</itunes:summary>
-    <description>Can't get enough of the radioshow Tiësto's Club Life? Then subscribe to this podcast and get a weekly update on the favourite tracks of Tiësto! For more info about Tiësto please visit www.tiesto.com or club.bnn.nl</description> 
-    <language>EN</language> 
+    <description>Can't get enough of the radioshow Tiësto's Club Life? Then subscribe to this podcast and get a weekly update on the favourite tracks of Tiësto! For more info about Tiësto please visit www.tiesto.com or club.bnn.nl</description>
+    <language>EN</language>
     <webmaster>webmaster@example.com</webmaster> 
     <lastBuildDate>Mon, 28 May 2012 13:00:00 GMT</lastBuildDate>                 
     <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/example" />
@@ -37,13 +37,14 @@
 
       <itunes:link rel="image" type="video/jpeg" href="http://podcasts.example.com/example2.jpg">Podcast 2 Example Image</itunes:link>
       <enclosure url="http://podcasts.example.com/example2.m4a" length="0" type="audio/mpeg" />
-    <feedburner:origEnclosureLink>http://tracks.example.com/example2.m4a</feedburner:origEnclosureLink>
+      <feedburner:origEnclosureLink>http://tracks.example.com/example2.m4a</feedburner:origEnclosureLink>
     </item>
     <item>
       <pubDate>Mon, 23 March 1999 23:00:00 GMT</pubDate>
       <title>Example Podcast 1</title>
       <author>Example Author 1</author>
       <itunes:author>Example Author 1</itunes:author>
+      <itunes:summary>iTunes Example Summary</itunes:summary>
       <itunes:subtitle>Example Subtitle 1</itunes:subtitle>
       <itunes:keywords>dance,david,electronica,guetta,house,podcast,radio,video</itunes:keywords>
       <itunes:duration>1:01:11</itunes:duration>
