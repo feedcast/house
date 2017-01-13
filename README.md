@@ -1,7 +1,10 @@
-# :pill: House
-> A Podcast RSS Reader and Diagnostician
+<p align="center">
+  <img src="https://raw.githubusercontent.com/feedcast/house/master/docs/logo.png" width="200">
+  <h1 align="center" style="margin-top: -50px">House</h1>
+  <p align="center">:pill: The Podcast RSS Reader and Diagnostician<p>
+</p>
 
-> :warning: This is a rebrand/fork of [kule/podcast_reader](https://github.com/kule/podcast_reader).
+> :round_pushpin: This is a refactor/fork of [kule/podcast_reader](https://github.com/kule/podcast_reader), thanks [@kule](/kule) for the efforts so far!
 
 ## Installation
 
