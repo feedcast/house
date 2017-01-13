@@ -4,7 +4,7 @@
   <p align="center">:pill: The Podcast RSS Reader and Diagnostician<p>
 </p>
 
-> :round_pushpin: This is a refactor/fork of [kule/podcast_reader](https://github.com/kule/podcast_reader), thanks [@kule](/kule) for the efforts so far!
+> :round_pushpin: This is a refactor/fork of [kule/podcast_reader](https://github.com/kule/podcast_reader), thanks [@kule](https://github.com/kule) for the efforts so far!
 
 ## Installation
 
