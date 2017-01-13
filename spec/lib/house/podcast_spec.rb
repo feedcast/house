@@ -38,7 +38,7 @@ RSpec.describe House::Podcast do
       podcast.author.should_not be_nil
       podcast.subtitle.should_not be_nil
       podcast.summary.should_not be_nil
-      podcast.explicit?.should be_false
+      podcast.explicit?.should be_falsey
     end
 
     it "should be valid without the itunes podcast attributes" do
@@ -110,13 +110,6 @@ RSpec.describe House::Podcast do
           File.exists?(File.join(@save_dir, "example2.m4a"))
         end
 
-        it "allows the item to be converted to another format" do
-          pending "Future consideration"
-          # e.g.
-          # @item.download_to(File.join(@save_dir, "example2.mp3"), "mp3")
-          # File.exists?(File.join(@save_dir, "example2.mp3"))
-        end
-
         it "allows the podcast image to be downloaded to the specified directory" do
           @podcast.download_image_to(File.join(@save_dir, "example2.jpg"))
           File.exists?(File.join(@save_dir, "example2.jpg"))
@@ -127,13 +120,13 @@ RSpec.describe House::Podcast do
     context "updated since" do
       it "will confirm if a newer version has been released" do
         podcast = House::Podcast.new("http://podcasts.example.com/valid_future.xml")
-        podcast.updated_since?(Time.now).should be_true
+        podcast.updated_since?(Time.now).should be_truthy
         #check latest item/pubdate
       end
 
       it "will confirm if a newer version has NOT been released" do
         podcast = House::Podcast.new("http://podcasts.example.com/valid_past.xml")
-        podcast.updated_since?(Time.now).should be_false
+        podcast.updated_since?(Time.now).should be_falsey
       end
     end
   end
